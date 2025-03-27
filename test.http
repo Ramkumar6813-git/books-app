@@ -1,0 +1,31 @@
+GET http://localhost:3000/books/
+###
+
+GET http://localhost:3000/books/9
+###
+
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "Title": "Bahubali: The Beginning",
+    "AuthorID": 1,
+    "GenreID": 1,
+    "Pages": 223,
+    "PublishedDate": "2017-01-01"
+}
+###
+
+PUT http://localhost:3000/books/9
+Content-Type: application/json
+
+{
+    "Title": "Bahubali: The Conclusion",
+    "AuthorID": 1,
+    "GenreID": 1,
+    "Pages": 223,
+    "PublishedDate": "2020-01-01"
+}
+###
+
+DELETE http://localhost:3000/books/9
